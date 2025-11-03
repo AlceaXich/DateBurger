@@ -7,8 +7,8 @@ import kotlinx.coroutines.flow.StateFlow
 class PortadaViewModel : ViewModel() {
     private val _detailEvent = MutableStateFlow(
         Event(
-            title = "Intercambio de Hmaburguesas",
-            date = "Sabado 14 de Diciembre, 6:00 pm",
+            title = "Intercambio de Hamburguesas",
+            date = "Sábado 14 de Diciembre, 6:00 pm",
             place = "Casa de Lu",
             description = "Trae tu media XD"
         )

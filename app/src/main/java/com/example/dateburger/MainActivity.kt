@@ -8,6 +8,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.example.dateburger.ui.navigation.AppNavGraph
 import com.example.dateburger.ui.screen.portada.PortadaScreen
 import com.example.dateburger.ui.theme.DateBurgerTheme
 
@@ -17,7 +19,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             DateBurgerTheme {
-                PortadaScreen()
+                val navController = rememberNavController()
+                AppNavGraph(navController = navController)
             }
         }
     }
